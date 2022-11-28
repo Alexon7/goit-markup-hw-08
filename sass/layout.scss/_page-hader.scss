@@ -4,8 +4,11 @@
 .header__wrap {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	margin-left: auto;
+
+	@media screen and (max-width: 767px) {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
 }
 .header-nav__segment {
 	display: flex;
@@ -25,7 +28,7 @@
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-	
+
 	transition: color 250ms var(--timing-function);
 
 	&:hover,
@@ -38,6 +41,14 @@
 	@extend %list;
 	display: flex;
 	margin-left: 93px;
+
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+
+	@media screen and (min-width: 768px) {
+		margin-left: 88px;
+	}
 }
 .header-nav__item:not(:last-child) {
 	margin-right: 50px;
@@ -64,9 +75,24 @@
 	@extend %list;
 	display: flex;
 	align-items: center;
+	margin-left: auto;
+
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1200px) {
+		flex-direction: column;
+		align-items: start;
+		gap: 10px;
+	}
 }
 .header-contact__item + .header-contact__item {
 	margin-left: 50px;
+
+	@media screen and (min-width: 768px) and (max-width: 1200px) {
+		margin-left: 0;
+	}
 }
 
 /* Альтернитива 
@@ -77,12 +103,12 @@
 .header-contact__icon {
 	margin-right: 10px;
 	fill: currentColor;
-// 	transition: fill 250ms var(--timing-function);
+	// 	transition: fill 250ms var(--timing-function);
 
-// .&:hover,
-// .&:focus {
-// 	fill: var(--accent-color);
-// }
+	// .&:hover,
+	// .&:focus {
+	// 	fill: var(--accent-color);
+	// }
 }
 
 .header-contact__link {
@@ -90,20 +116,27 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-		padding-top: 32px;
+	padding-top: 32px;
 	padding-bottom: 32px;
 
-	color:var(--primary-text-color);
+	color: var(--primary-text-color);
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-	
+
 	transition: color 250ms var(--timing-function);
 
 	&:hover,
 	&:focus {
 		color: var(--accent-color);
 		fill: var(--accent-color);
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1200px) {
+		padding-top: 0;
+		padding-bottom: 0;
+		font-size: 12px;
+		line-height: 1.17;
 	}
 }

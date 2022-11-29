@@ -65,7 +65,7 @@
 			</div>
 		</header>
 		<main>
-			<section class="decision decision--overlay">
+			<section class="decision">
 				<h1 class="decision__title">Ефективні рішення для вашого бізнесу</h1>
 				<button type="button" class="decision__button btn" data-modal-open>Замовити послугу</button>
 			</section>
@@ -327,32 +327,32 @@
 				<div class="container">
 					<h2 class="section-title">Постійні клієнти</h2>
 					<ul class="clients__list">
-						<li
+						<li class="clients__item"
 							><a href="" class="clients__link"
 								><svg class="clients__logo">
 									<use href="./images/symbol-defs.svg#icon-Logo1"></use></svg></a
 						></li>
-						<li
+						<li class="clients__item"
 							><a href="" class="clients__link"
 								><svg class="clients__logo">
 									<use href="./images/symbol-defs.svg#icon-Logo2"></use></svg></a
 						></li>
-						<li
+						<li class="clients__item"
 							><a href="" class="clients__link"
 								><svg class="clients__logo">
 									<use href="./images/symbol-defs.svg#icon-Logo3"></use></svg></a
 						></li>
-						<li
+						<li class="clients__item"
 							><a href="" class="clients__link"
 								><svg class="clients__logo">
 									<use href="./images/symbol-defs.svg#icon-Logo4"></use></svg></a
 						></li>
-						<li
+						<li class="clients__item"
 							><a href="" class="clients__link"
 								><svg class="clients__logo">
 									<use href="./images/symbol-defs.svg#icon-Logo5"></use></svg></a
 						></li>
-						<li
+						<li class="clients__item"
 							><a href="" class="clients__link"
 								><svg class="clients__logo">
 									<use href="./images/symbol-defs.svg#icon-Logo6"></use></svg></a
@@ -404,8 +404,8 @@
 						></li>
 					</ul>
 				</div>
-				<div>
-					<b class="footer-subscription">Підпишіться на розсилку</b>
+				<div class="footer-subscription">
+					<b class="footer-subscription__title">Підпишіться на розсилку</b>
 					<form class="footer-subscription__form">
 						<label for="mail"></label>
 						<input class="footer-subscription__field" type="email" name="subscription" id="mail" placeholder="E-mail" />
@@ -488,7 +488,9 @@
 				<li class="mobile-nav__item"><a class="mobile-nav__link" href="">Контакти</a></li>
 			</ul>
 			<ul class="mobile-contact">
-				<li class="mobile-contact__item"><a class="mobile-contact__link" href="tel:+380961111111">380961111111</a></li>
+				<li class="mobile-contact__item"
+					><a class="mobile-contact__link" href="tel:+380961111111">+38 096 111 11 11</a></li
+				>
 				<li class="mobile-contact__item"
 					><a class="mobile-contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li
 				>

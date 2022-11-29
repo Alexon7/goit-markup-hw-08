@@ -16,9 +16,10 @@
 }
 .header-nav__link {
 	@extend %link;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
+	display: block;
 	position: relative;
 	padding-top: 32px;
 	padding-bottom: 32px;
@@ -40,6 +41,7 @@
 .header-nav__list {
 	@extend %list;
 	display: flex;
+	align-items: center;
 	margin-left: 93px;
 
 	@media screen and (max-width: 767px) {
@@ -115,7 +117,6 @@
 	@extend %link;
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	padding-top: 32px;
 	padding-bottom: 32px;
 

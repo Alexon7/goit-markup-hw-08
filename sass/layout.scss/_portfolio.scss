@@ -2,14 +2,29 @@
 	@extend %section;
 }
 .filter {
-    @extend %list;
+	@extend %list;
 	display: flex;
 	justify-content: center;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
+	gap: 8px;
+
+	@media screen and (max-width: 767px) {
+		flex-wrap: wrap;
+		column-gap: 8px;
+		row-gap: 15px;
+	}
+
+	@media screen and (min-width: 768px) {
+		margin-bottom: 30px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 50px;
+	}
 }
-.filter__item + .filter__item {
-	margin-left: 8px;
-}
+// .filter__item + .filter__item {
+// 	margin-left: 8px;
+// }
 .filter-button {
 	display: inline-block;
 	border-radius: 4px;
@@ -37,28 +52,52 @@
 		box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 	}
 }
+// .element {
+// 	padding: 0;
+// 	margin: 0;
+// 	list-style: none;
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	margin-left: calc(-1 * var(--card-set-gap));
+// 	margin-top: calc(-1 * var(--card-set-gap));
+// }
 .element {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: calc(-1 * var(--card-set-gap));
-	margin-top: calc(-1 * var(--card-set-gap));
-}
-.element__list {
 	@extend %list;
-	flex-basis: calc((100%/3) - var(--card-set-gap));
-	margin-left: var(--card-set-gap);
-	margin-top: var(--card-set-gap);
-	background-color: #ffffff;
-	transition: box-shadow 250ms var(--timing-function);
 
-	&:hover,
-	&:focus {
-		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
 	}
 }
+.element__list {
+	max-width: 450px;
+
+	@media screen and (min-width: 768px) {
+		max-width: 354px;
+	}
+	@media screen and (min-width: 1200px) {
+		max-width: 370px;
+	}
+}
+.example__list + .example__list {
+	@media screen and (max-width: 767px) {
+		margin-top: 30px;
+	}
+}
+// .element__list {
+// 	@extend %list;
+// 	flex-basis: calc((100% / 3) - var(--card-set-gap));
+// 	margin-left: var(--card-set-gap);
+// 	margin-top: var(--card-set-gap);
+// 	background-color: #ffffff;
+// 	transition: box-shadow 250ms var(--timing-function);
+
+// 	&:hover,
+// 	&:focus {
+// 		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+// 	}
+// }
 .element__thumb {
 	position: relative;
 	overflow: hidden;

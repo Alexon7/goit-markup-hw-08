@@ -52,6 +52,17 @@
 						></li
 					>
 				</ul>
+				<button
+					type="button"
+					class="menu-button js-open-menu"
+					aria-expanded="false"
+					aria-controls="menu-container"
+					data-menu-button
+				>
+					<svg class="menu-icon" width="40" height="40">
+						<use href="./images/symbol-defs.svg#icon-menu"></use>
+					</svg>
+				</button>
 			</div>
 		</header>
 		<main>
@@ -70,19 +81,21 @@
 						<li class="element__list">
 							<a href="" class="element__link">
 								<div class="element__thumb">
-									<img
-										srcset="./photos/portfolio/card_01_m-min.jpg 450vw, 
-								        ./photos/portfolio/card_01_m@2x-min.jpg 900vw,
-							            ./photos/portfolio/card_01_t-min.jpg 354w,
-                                        ./photos/portfolio/card_011_t@2x-min.jpg 708w,
-							            ./photos/portfolio/card_01_d-min.jpg 370w,
-							            ./photos/portfolio/card_01_d@2x-min.jpg 740w"
-										sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-										src="./photos/portfolio/card_01_m-min.jpg"
-										alt="Технокряк"
-										width="370"
-										height="294"
-									/>
+									<picture>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./photos/portfolio/card_01_d-min.jpg 1x, ./photos/portfolio/card_01_d@2x-min.jpg 2x"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./photos/portfolio/card_01_t-min.jpg 1x, ./photos/portfolio/card_01_t@2x-min.jpg 2x"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./photos/portfolio/card_01_m-min.jpg 1x, ./photos/portfolio/card_01_m@2x-min.jpg 2x"
+										/>
+										<img src="./photos/portfolio/card_01_m-min.jpg" alt="" />
+									</picture>
 									<p class="element__resource"
 										>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p
@@ -97,7 +110,21 @@
 						<li class="element__list">
 							<a href="" class="element__link">
 								<div class="element__thumb">
-									<img src="./images/p2.jpg" alt="Баскетболісти" width="370" height="294" />
+									<picture>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./photos/portfolio/card_02_d-min.jpg 1x, ./photos/portfolio/card_02_d@2x-min.jpg 2x"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./photos/portfolio/card_012t-min.jpg 1x, ./photos/portfolio/card_02_t@2x-min.jpg 2x"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./photos/portfolio/card_02_m-min.jpg 1x, ./photos/portfolio/card_02_m@2x-min.jpg 2x"
+										/>
+										<img src="./photos/portfolio/card_02_m-min.jpg" alt="" />
+									</picture>
 									<p class="element__resource"
 										>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p
@@ -112,7 +139,21 @@
 						<li class="element__list">
 							<a href="" class="element__link">
 								<div class="element__thumb">
-									<img src="./images/p3.jpg" alt="Назва ресторану" width="370" height="294" />
+									<picture>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./photos/portfolio/card_03_d-min.jpg 1x, ./photos/portfolio/card_03_d@2x-min.jpg 2x"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./photos/portfolio/card_03_t-min.jpg 1x, ./photos/portfolio/card_03_t@2x-min.jpg 2x"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./photos/portfolio/card_03_m-min.jpg 1x, ./photos/portfolio/card_03_m@2x-min.jpg 2x"
+										/>
+										<img src="./photos/portfolio/card_03_m-min.jpg" alt="" />
+									</picture>
 									<p class="element__resource"
 										>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p
@@ -128,7 +169,21 @@
 						<li class="element__list">
 							<a href="" class="element__link">
 								<div class="element__thumb">
-									<img src="./images/p4.jpg" alt="Навушники" width="370" height="294" />
+									<picture>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./photos/portfolio/card_04_d-min.jpg 1x, ./photos/portfolio/card_04_d@2x-min.jpg 2x"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./photos/portfolio/card_04_t-min.jpg 1x, ./photos/portfolio/card_04_t@2x-min.jpg 2x"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./photos/portfolio/card_04_m-min.jpg 1x, ./photos/portfolio/card_04_m@2x-min.jpg 2x"
+										/>
+										<img src="./photos/portfolio/card_04_m-min.jpg" alt="" />
+									</picture>
 									<p class="element__resource"
 										>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p
@@ -143,7 +198,21 @@
 						<li class="element__list">
 							<a href="" class="element__link">
 								<div class="element__thumb">
-									<img src="./images/p5.jpg" alt="Коробки" width="370" height="294" />
+									<picture>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./photos/portfolio/card_05_d-min.jpg 1x, ./photos/portfolio/card_05_d@2x-min.jpg 2x"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./photos/portfolio/card_05_t-min.jpg 1x, ./photos/portfolio/card_05_t@2x-min.jpg 2x"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./photos/portfolio/card_05_m-min.jpg 1x, ./photos/portfolio/card_05_m@2x-min.jpg 2x"
+										/>
+										<img src="./photos/portfolio/card_05_m-min.jpg" alt="" />
+									</picture>
 									<p class="element__resource"
 										>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p
@@ -158,7 +227,21 @@
 						<li class="element__list">
 							<a href="" class="element__link">
 								<div class="element__thumb">
-									<img src="./images/p6.jpg" alt="Монитор" width="370" height="294" />
+									<picture>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./photos/portfolio/card_06_d-min.jpg 1x, ./photos/portfolio/card_06_d@2x-min.jpg 2x"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./photos/portfolio/card_06_t-min.jpg 1x, ./photos/portfolio/card_06_t@2x-min.jpg 2x"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./photos/portfolio/card_06_m-min.jpg 1x, ./photos/portfolio/card_06_m@2x-min.jpg 2x"
+										/>
+										<img src="./photos/portfolio/card_06_m-min.jpg" alt="" />
+									</picture>
 									<p class="element__resource"
 										>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p
@@ -173,7 +256,21 @@
 						<li class="element__list">
 							<a href="" class="element__link">
 								<div class="element__thumb">
-									<img src="./images/p7.jpg" alt="Журнал" width="370" height="294" />
+									<picture>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./photos/portfolio/card_07_d-min.jpg 1x, ./photos/portfolio/card_07_d@2x-min.jpg 2x"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./photos/portfolio/card_07_t-min.jpg 1x, ./photos/portfolio/card_07_t@2x-min.jpg 2x"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./photos/portfolio/card_07_m-min.jpg 1x, ./photos/portfolio/card_07_m@2x-min.jpg 2x"
+										/>
+										<img src="./photos/portfolio/card_07_m-min.jpg" alt="" />
+									</picture>
 									<p class="element__resource"
 										>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p
@@ -188,7 +285,21 @@
 						<li class="element__list">
 							<a href="" class="element__link">
 								<div class="element__thumb">
-									<img src="./images/p8.jpg" alt="Бирка" width="370" height="294" />
+									<picture>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./photos/portfolio/card_08_d-min.jpg 1x, ./photos/portfolio/card_08_d@2x-min.jpg 2x"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./photos/portfolio/card_08_t-min.jpg 1x, ./photos/portfolio/card_08_t@2x-min.jpg 2x"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./photos/portfolio/card_08_m-min.jpg 1x, ./photos/portfolio/card_08_m@2x-min.jpg 2x"
+										/>
+										<img src="./photos/portfolio/card_08_m-min.jpg" alt="" />
+									</picture>
 									<p class="element__resource"
 										>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p
@@ -203,7 +314,21 @@
 						<li class="element__list">
 							<a href="" class="element__link">
 								<div class="element__thumb">
-									<img src="./images/p9.jpg" alt="Ноутбук" width="370" height="294" />
+									<picture>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./photos/portfolio/card_09_d-min.jpg 1x, ./photos/portfolio/card_09_d@2x-min.jpg 2x"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./photos/portfolio/card_09_t-min.jpg 1x, ./photos/portfolio/card_09_t@2x-min.jpg 2x"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./photos/portfolio/card_09_m-min.jpg 1x, ./photos/portfolio/card_09_m@2x-min.jpg 2x"
+										/>
+										<img src="./photos/portfolio/card_09_m-min.jpg" alt="" />
+									</picture>
 									<p class="element__resource"
 										>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p
@@ -279,6 +404,40 @@
 			</div>
 		</footer>
 		<!-- mobile menu -->
+		<div class="menu-container js-menu-container" id="mobile-menu">
+			<button
+				type="button"
+				class="menu-button js-close-menu"
+				aria-expanded="false"
+				aria-controls="menu-container"
+				data-menu-button
+			>
+				<svg class="menu-icon" width="40" height="40">
+					<use href="./images/symbol-defs.svg#icon-menu-close"></use>
+				</svg>
+			</button>
+			<ul class="mobile-nav">
+				<li class="mobile-nav__item"
+					><a class="mobile-nav__link mobile-nav__link--active" href="./index.html">Студія</a></li
+				>
+				<li class="mobile-nav__item"><a class="mobile-nav__link" href="./portfolio.html">Портфоліо</a></li>
+				<li class="mobile-nav__item"><a class="mobile-nav__link" href="">Контакти</a></li>
+			</ul>
+			<ul class="mobile-contact">
+				<li class="mobile-contact__item"
+					><a class="mobile-contact__link" href="tel:+380961111111">+38 096 111 11 11</a></li
+				>
+				<li class="mobile-contact__item"
+					><a class="mobile-contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li
+				>
+			</ul>
+			<ul class="mobile-socials">
+				<li class="mobile-socials__item"><a href="" class="mobile-socials__link">Instagram</a></li>
+				<li class="mobile-socials__item"><a href="" class="mobile-socials__link">Twitter</a></li>
+				<li class="mobile-socials__item"><a href="" class="mobile-socials__link">Facebook</a></li>
+				<li class="mobile-socials__item"><a href="" class="mobile-socials__link">LinkedIn</a></li>
+			</ul>
+		</div>
 		<script
 			defer
 			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

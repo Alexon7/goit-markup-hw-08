@@ -1,5 +1,9 @@
 .benefits {
 	@extend %section;
+
+	@media screen and (min-width: 1200px) {
+		padding-bottom: 0;
+	}
 }
 .benefits__list {
 	@extend %list;
@@ -23,12 +27,12 @@
 
 .benefits__card {
 	display: flex;
-	height: 120px;
-	background-color: #f5f4fa;
-	border-radius: 4px;
-	margin-bottom: 30px;
 	justify-content: center;
 	align-items: center;
+	height: 120px;
+	border-radius: 4px;
+	margin-bottom: 30px;
+	background-color: #f5f4fa;
 }
 .benefits__item + .benefits__item {
 	@media screen and (max-width: 767px) {

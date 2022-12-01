@@ -123,7 +123,11 @@ p {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 480px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -766,7 +770,8 @@ p {
 .decision__title {
   margin-bottom: 30px;
   max-width: 360px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.61;
